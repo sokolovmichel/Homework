@@ -8,7 +8,7 @@ namespace FormattingCoordinates
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите название файла с данными: "); //файл convert.txt, лежит в той же директории, что и exe.
+            //Console.WriteLine("Введите координаты для обработки: ");
             ReadData.Read();
 
         }
@@ -18,13 +18,28 @@ namespace FormattingCoordinates
     {
         public static void Read()
         {
+            if (!Console.IsInputRedirected)
+            {
+                Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
+                return;
+            }
+
             Decimal[] X, Y;
             var AllText = String.Empty;
 
             try
             {
-                AllText = System.IO.File.ReadAllText(Console.ReadLine());
-                
+                string line;
+
+
+
+                while ((line = Console.ReadLine()) != null)
+                {
+                    AllText += line + ",";
+                }
+
+
+
             }
             catch (System.IO.FileNotFoundException Situation)
             {

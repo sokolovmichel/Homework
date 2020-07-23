@@ -8,9 +8,8 @@ namespace FormattingCoordinates
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Введите координаты для обработки: ");
             ReadData.Read();
-
+            Console.Read();
         }
     }
 

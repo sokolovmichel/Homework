@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,48 @@ namespace VersionWPF
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            Decimal[] X, Y;
+            var AllText = String.Empty;
 
+                  AllText = textBox1.Text;
+                       
+
+            Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
+
+            var Coordinates = AllText.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
+            var n = Coordinates.Length;
+            var z = n % 2;
+            if (z != 0)
+            {
+                textBox1.Text = "Количество исходных данных не кратно двум";
+                return;
+            }
+
+
+
+            X = new Decimal[n / 2]; Y = new Decimal[n / 2];
+
+            Boolean A, B;
+            var j = 0;
+
+            for (var i = 0; i <= n / 2 - 1; i++)
+            {
+
+                IFormatProvider culture = new CultureInfo("en-Us", useUserOverride: true);
+                A = Decimal.TryParse(Coordinates[j], NumberStyles.AllowDecimalPoint, culture, out X[i]);
+                j = j + 1;
+                B = Decimal.TryParse(Coordinates[j], NumberStyles.AllowDecimalPoint, culture, out Y[i]);
+                j = j + 1;
+
+                if ((A && B) == false)
+                    textBox1.Text = String.Format("В строке {0} - не числовой ввод!", i + 1);
+
+            }
+
+            for (var i = 0; i <= n / 2 - 1; i++)
+            {
+                textBox1.Text = String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n", X[i], Y[i]);
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 /obj
 *.cache
 /Properties
+/.vs
 
 # Prerequisites
 *.d

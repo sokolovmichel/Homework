@@ -30,7 +30,7 @@ namespace VersionWPF
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Decimal[] X, Y;
-            var AllText = String.Empty;
+            string AllText = String.Empty;
 
                   AllText = textBox1.Text;
                        
@@ -67,9 +67,10 @@ namespace VersionWPF
 
             }
 
+            textBox1.Text = "";
             for (var i = 0; i <= n / 2 - 1; i++)
             {
-                textBox1.Text = String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n", X[i], Y[i]);
+                textBox1.AppendText(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n", X[i], Y[i]));
             }
         }
     }

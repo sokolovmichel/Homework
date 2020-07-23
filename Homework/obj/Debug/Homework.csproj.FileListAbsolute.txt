@@ -2,3 +2,6 @@ C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.csprojAssemb
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.exe
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.pdb
+C:\Users\Миша\source\repos\Homework\Homework\bin\Debug\Homework.exe.config
+C:\Users\Миша\source\repos\Homework\Homework\bin\Debug\Homework.exe
+C:\Users\Миша\source\repos\Homework\Homework\bin\Debug\Homework.pdb

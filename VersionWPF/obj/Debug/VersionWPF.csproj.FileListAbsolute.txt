@@ -1,0 +1,15 @@
+C:\Users\Миша\source\repos\Homework\VersionWPF\bin\Debug\VersionWPF.exe.config
+C:\Users\Миша\source\repos\Homework\VersionWPF\bin\Debug\VersionWPF.exe
+C:\Users\Миша\source\repos\Homework\VersionWPF\bin\Debug\VersionWPF.pdb
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\App.g.cs
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF_MarkupCompile.cache
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF_MarkupCompile.lref
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\MainWindow.baml
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.g.resources
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.Properties.Resources.resources
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.csproj.GenerateResource.cache
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.exe
+C:\Users\Миша\source\repos\Homework\VersionWPF\obj\Debug\VersionWPF.pdb

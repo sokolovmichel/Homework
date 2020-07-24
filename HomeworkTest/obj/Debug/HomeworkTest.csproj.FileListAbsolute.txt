@@ -1,0 +1,17 @@
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\HomeworkTest.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\HomeworkTest.pdb
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Homework.exe
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Homework.pdb
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Homework.exe.config
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Миша\source\repos\Homework\HomeworkTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Миша\source\repos\Homework\HomeworkTest\obj\Debug\HomeworkTest.csprojAssemblyReference.cache
+C:\Users\Миша\source\repos\Homework\HomeworkTest\obj\Debug\HomeworkTest.csproj.CoreCompileInputs.cache
+C:\Users\Миша\source\repos\Homework\HomeworkTest\obj\Debug\HomeworkTest.csproj.CopyComplete
+C:\Users\Миша\source\repos\Homework\HomeworkTest\obj\Debug\HomeworkTest.dll
+C:\Users\Миша\source\repos\Homework\HomeworkTest\obj\Debug\HomeworkTest.pdb

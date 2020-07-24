@@ -4,23 +4,24 @@ using System.Globalization;
 namespace FormattingCoordinates
 {
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            ReadData.Read();
+            string s = ReadData.Read();
+            ReadData.Convert(s);
             Console.Read();
         }
     }
 
     public class ReadData
     {
-        public static void Read()
+        public static string Read()
         {
             if (!Console.IsInputRedirected)
             {
-                Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
-                return;
+                 Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
+                 return null;
             }
 
             Decimal[] X, Y;
@@ -49,6 +50,16 @@ namespace FormattingCoordinates
                 Console.WriteLine(Situation.Message);
             }
 
+            return AllText;
+                        
+        }
+
+        public static string Convert (string AllText)
+        {
+            Decimal[] X, Y;
+            //var AllText = String.Empty;
+            string Text = String.Empty;
+
             Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
 
             var Coordinates = AllText.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
@@ -57,7 +68,7 @@ namespace FormattingCoordinates
             if (z != 0)
             {
                 Console.WriteLine("Количество исходных данных не кратно двум");
-                return;
+                return null;
             }
 
 
@@ -85,8 +96,13 @@ namespace FormattingCoordinates
             {
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
+
+                Text += String.Format("X:{0}" + "Y:{1}" ,
+                    X[i], Y[i]);
+
             }
 
+            return Text;
             Console.ReadLine();
 
         }

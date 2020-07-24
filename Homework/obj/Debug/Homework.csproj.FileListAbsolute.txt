@@ -1,4 +1,3 @@
-C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.csprojAssemblyReference.cache
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.csproj.CoreCompileInputs.cache
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.exe
 C:\Users\Миша\source\repos\Homework\Homework\obj\Debug\Homework.pdb

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homewo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionWPF", "VersionWPF\VersionWPF.csproj", "{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkTest", "HomeworkTest\HomeworkTest.csproj", "{AA794511-9F80-4CB5-BFE3-C24ED59122C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

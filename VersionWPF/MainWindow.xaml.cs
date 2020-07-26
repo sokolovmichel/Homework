@@ -25,15 +25,31 @@ namespace VersionWPF
         {
             InitializeComponent();
             textBox1.Text = "25.48,65.56";
+            
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            Decimal[] X, Y;
-            string AllText = String.Empty;
+            string s = Read();
+            Convert(s);
 
-                  AllText = textBox1.Text;
-                       
+        }
+
+        public string Read()
+        {
+            
+            string AllText = String.Empty;
+            AllText = textBox1.Text;
+                                   
+            return AllText;
+
+        }
+
+        public void Convert(string AllText)
+        {
+            Decimal[] X, Y;
+            //var AllText = String.Empty;
+            string Text = String.Empty;
 
             Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
 
@@ -43,7 +59,7 @@ namespace VersionWPF
             if (z != 0)
             {
                 textBox1.Text = "Количество исходных данных не кратно двум";
-                return;
+                
             }
 
 
@@ -66,12 +82,20 @@ namespace VersionWPF
                     textBox1.Text = String.Format("В строке {0} - не числовой ввод!", i + 1);
 
             }
-
             textBox1.Text = "";
             for (var i = 0; i <= n / 2 - 1; i++)
             {
                 textBox1.AppendText(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n", X[i], Y[i]));
+
+
             }
+
+            
+            
+
         }
     }
+
+
 }
+

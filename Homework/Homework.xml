@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Homework</name>
+    </assembly>
+    <members>
+        <member name="T:FormattingCoordinates.Program">
+            <summary>
+            Точка входа
+            </summary>
+        </member>
+        <member name="T:FormattingCoordinates.ReadData">
+            <summary>
+            Класс читает координаты из перенаправленного файла и выводит их
+            в отформатированной виде на консоль
+            </summary>
+        </member>
+        <member name="M:FormattingCoordinates.ReadData.Read">
+            <summary>
+            метод читает читает координаты из перенаправленного файла
+            и выводит их в строковую переменную
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormattingCoordinates.ReadData.Convert(System.String)">
+            <summary>
+            метод форматирует исходные координаты, полученные из строковой переменной
+            и выводит их на консоль
+            </summary>
+        </member>
+    </members>
+</doc>

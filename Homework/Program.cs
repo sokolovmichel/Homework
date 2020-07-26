@@ -3,7 +3,9 @@ using System.Globalization;
 
 namespace FormattingCoordinates
 {
-
+    /// <summary>
+    /// Точка входа
+    /// </summary>
     public class Program
     {
         static void Main(string[] args)
@@ -14,8 +16,17 @@ namespace FormattingCoordinates
         }
     }
 
+    /// <summary>
+    /// Класс читает координаты из перенаправленного файла и выводит их
+    /// в отформатированной виде на консоль
+    /// </summary>
     public class ReadData
     {
+        /// <summary>
+        /// метод читает читает координаты из перенаправленного файла
+        /// и выводит их в строковую переменную
+        /// </summary>
+        /// <returns></returns>
         public static string Read()
         {
             if (!Console.IsInputRedirected)
@@ -54,10 +65,15 @@ namespace FormattingCoordinates
                         
         }
 
-        public static string Convert (string AllText)
+        /// <summary>
+        /// метод форматирует исходные координаты, полученные из строковой переменной
+        /// и выводит их на консоль
+        /// </summary>
+        
+        public static void Convert (string AllText)
         {
             Decimal[] X, Y;
-            //var AllText = String.Empty;
+            
             string Text = String.Empty;
 
             Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
@@ -97,13 +113,12 @@ namespace FormattingCoordinates
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
 
-                Text += String.Format("X:{0}" + "Y:{1}" ,
-                    X[i], Y[i]);
+                
 
             }
 
-            return Text;
-            Console.ReadLine();
+            
+            
 
         }
 

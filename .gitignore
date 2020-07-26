@@ -1,8 +1,16 @@
-/bin
-/obj
-*.cache
-/Properties
-/.vs
+/Homework/bin
+/Homework/obj
+/Homework/Properties
+/Homework/App.config
+/packages
+/VersionWPF/bin
+/VersionWPF/obj
+/VersionWPF/Properties
+/TestResults
+/HomeworkTest/bin
+/HomeworkTest/obj
+
+
 
 # Prerequisites
 *.d

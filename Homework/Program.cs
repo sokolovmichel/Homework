@@ -21,7 +21,7 @@ namespace FormattingCoordinates
             if (!Console.IsInputRedirected)
             {
                  Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
-                 return null;
+                Console.Read();
             }
 
             Decimal[] X, Y;
@@ -68,7 +68,7 @@ namespace FormattingCoordinates
             if (z != 0)
             {
                 Console.WriteLine("Количество исходных данных не кратно двум");
-                return null;
+                Console.Read();
             }
 
 

@@ -14,8 +14,16 @@ namespace FormattingCoordinates
         }
     }
 
+    /// <summary>
+    /// Класс читает координаты из перенаправленного файла и выводит их
+    /// в отформатированной виде на консоль
+    /// </summary>
     public class ReadData
     {
+        /// <summary>
+        /// Метод читает координаты из перенаправленного файла и выводит их
+        /// в отформатированной виде на консоль
+        /// </summary>
         public static void Read()
         {
             Decimal[] X, Y;

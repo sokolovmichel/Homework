@@ -10,7 +10,8 @@
 /HomeworkTest/bin
 /HomeworkTest/obj
 /.vs
-
+/Homework/Homework.exe.config
+/VersionWPF/VersionWPF.exe.config
 
 
 # Prerequisites

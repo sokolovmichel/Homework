@@ -21,6 +21,9 @@ namespace VersionWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Инициализация компонентов и установка начальных координат в поле
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +38,11 @@ namespace VersionWPF
 
         }
 
+        /// <summary>
+        /// метод читает читает координаты из текстового поля
+        /// и выводит их в строковую переменную
+        /// </summary>
+
         public string Read()
         {
             
@@ -45,6 +53,11 @@ namespace VersionWPF
 
         }
 
+        /// <summary>
+        /// метод форматирует исходные координаты, полученные из строковой переменной
+        /// и выводит их в текстовое поле
+        /// </summary>
+        /// <param name="AllText"></param>
         public void Convert(string AllText)
         {
             Decimal[] X, Y;

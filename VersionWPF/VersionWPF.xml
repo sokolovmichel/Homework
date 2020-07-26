@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VersionWPF</name>
+    </assembly>
+    <members>
+        <member name="T:VersionWPF.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:VersionWPF.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:VersionWPF.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:VersionWPF.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:VersionWPF.MainWindow.#ctor">
+            <summary>
+            Инициализация компонентов и установка начальных координат в поле
+            </summary>
+        </member>
+        <member name="M:VersionWPF.MainWindow.Read">
+            <summary>
+            метод читает читает координаты из текстового поля
+            и выводит их в строковую переменную
+            </summary>
+        </member>
+        <member name="M:VersionWPF.MainWindow.Convert(System.String)">
+            <summary>
+            метод форматирует исходные координаты, полученные из строковой переменной
+            и выводит их в текстовое поле
+            </summary>
+            <param name="AllText"></param>
+        </member>
+        <member name="M:VersionWPF.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:VersionWPF.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:VersionWPF.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:VersionWPF.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -69,11 +69,11 @@ namespace FormattingCoordinates
         /// метод форматирует исходные координаты, полученные из строковой переменной
         /// и выводит их на консоль
         /// </summary>
-        
-        public static void Convert (string AllText)
+
+        public static string Convert(string AllText)
         {
             Decimal[] X, Y;
-            
+
             string Text = String.Empty;
 
             Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
@@ -84,7 +84,8 @@ namespace FormattingCoordinates
             if (z != 0)
             {
                 Console.WriteLine("Количество исходных данных не кратно двум");
-                Console.Read();
+                
+                return null;
             }
 
 
@@ -113,11 +114,14 @@ namespace FormattingCoordinates
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
 
-                
+                Text = String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
+                    X[i], Y[i]);
+
+                 
 
             }
 
-            
+            return Text;
             
 
         }

@@ -114,7 +114,7 @@ namespace FormattingCoordinates
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
 
-                Text = String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
+                Text = String.Format("X: {0}" + "Y: {1}",
                     X[i], Y[i]);
 
                  

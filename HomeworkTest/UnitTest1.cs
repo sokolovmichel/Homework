@@ -14,7 +14,7 @@ namespace HomeworkTest
             string s;
             s = ReadData.Convert("11.11,22.22");
             //Assert.AreEqual("11,11 22,22", s);
-            Assert.AreEqual("X:11,11Y:22,22", s);
+            Assert.AreEqual("X: 11,11Y: 22,22", s);
         }
     }
 }

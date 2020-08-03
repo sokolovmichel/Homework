@@ -10,6 +10,19 @@
 /HomeworkTest/Properties
 /.vs
 Homework/Homework.exe.config
+HomeworkTest/HomeworkTest.csproj
+HomeworkTest/packages.config
+
+/HomeworkForMoq/bin
+/HomeworkForMoq/obj
+/HomeworkForMoq/Properties
+/HomeworkForMoq/App.config
+
+/HomeworkForMoqTests1/bin
+/HomeworkForMoqTests1/obj
+/HomeworkForMoqTests1/Properties
+HomeworkForMoqTests1/packages.config
+
 
 # Prerequisites
 *.d

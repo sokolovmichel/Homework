@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-
+using HomeworkForMoq;
 
 namespace FormattingCoordinates
 {
@@ -11,8 +11,10 @@ namespace FormattingCoordinates
     {
         static void Main(string[] args)
         {
-            string s = ReadData.Read();
-            ReadData.Convert(s);
+            string s = ReadDataNew.Read(); //читаем координаты из перенаправленного файла в строку
+            string s1 = ReadDataNew.Convert2(s); //добавляем в конец строки еще пару координат
+            ReadDataNew.Convert(s1); //преобразуем исходную строку с координатами в требуемый формат
+            
             Console.Read();
         }
     }
@@ -21,7 +23,7 @@ namespace FormattingCoordinates
     /// Класс читает координаты из перенаправленного файла и выводит их
     /// в отформатированной виде на консоль
     /// </summary>
-    public class ReadData
+    public class ReadDataNew
     {
         /// <summary>
         /// метод читает читает координаты из перенаправленного файла
@@ -32,11 +34,11 @@ namespace FormattingCoordinates
         {
             if (!Console.IsInputRedirected)
             {
-                 Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
+                Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
                 Console.Read();
             }
 
-            
+
             var AllText = String.Empty;
 
             try
@@ -63,8 +65,27 @@ namespace FormattingCoordinates
             }
 
             return AllText;
-                        
+
         }
+
+
+        /// <summary>
+        /// метод для проверки модульного теста
+        /// к полученной из метода Read() строке добавляет лишние координаты "555.555,555.555"
+        /// в тесте при помощи Moq мы заменяем ожидаемое от него значение строки
+        /// на входящее значение "11.11,22.22", игнорируя код, который в нем реализован
+        /// </summary>
+        /// <param name="AllText"></param>
+        /// <returns></returns>
+        public static string Convert2(string AllText)
+        {
+            FormatText Text1 = new FormatText();
+            string MyText = Text1.FormatMyText(AllText);
+
+            return MyText;
+
+        }
+
 
         /// <summary>
         /// метод форматирует исходные координаты, полученные из строковой переменной
@@ -85,7 +106,7 @@ namespace FormattingCoordinates
             if (z != 0)
             {
                 Console.WriteLine("Количество исходных данных не кратно двум");
-                
+
                 return null;
             }
 
@@ -115,21 +136,22 @@ namespace FormattingCoordinates
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
 
-               
-                
+
+
                 Text = String.Format("X: {0}" + "Y: {1}", X[i], Y[i]);
 
-                 
+
 
             }
 
-           
-
-            return Text;
             
+            return Text;
+
+
 
         }
 
+        
 
     }
 }

@@ -9,6 +9,7 @@
 /HomeworkTest/obj
 /HomeworkTest/Properties
 /.vs
+<<<<<<< Updated upstream
 Homework/Homework.exe.config
 HomeworkTest/HomeworkTest.csproj
 HomeworkTest/packages.config
@@ -22,6 +23,14 @@ HomeworkTest/packages.config
 /HomeworkForMoqTests1/obj
 /HomeworkForMoqTests1/Properties
 HomeworkForMoqTests1/packages.config
+=======
+/Homework/Homework.exe.config
+/VersionWPF/VersionWPF.exe.config
+/HomeworkForMoq
+/HomeworkForMoqTests1
+/HomeworkTest
+
+>>>>>>> Stashed changes
 
 
 # Prerequisites

@@ -12,7 +12,12 @@
 /.vs
 /Homework/Homework.exe.config
 /VersionWPF/VersionWPF.exe.config
-
+/HomeworkForMoq
+/HomeworkForMoqTests1
+/HomeworkTest
+**/bin
+**/obj
+**/Properties
 
 # Prerequisites
 *.d

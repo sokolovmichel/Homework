@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task3CommonDivisor</name>
+    </assembly>
+    <members>
+        <member name="T:Task3CommonDivisor.GreatestCommonDivisor">
+            <summary>
+            Реализация алгоритма Евклида для вычисления наибольшего общего делителя
+            </summary>
+        </member>
+        <member name="M:Task3CommonDivisor.GreatestCommonDivisor.CalculateGCD(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            метод вычисления НОД для массива целых чисел
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -4,14 +4,11 @@
         <name>Homework</name>
     </assembly>
     <members>
-<<<<<<< HEAD
-=======
         <member name="T:FormattingCoordinates.Program">
             <summary>
             Точка входа
             </summary>
         </member>
->>>>>>> redirection
         <member name="T:FormattingCoordinates.ReadData">
             <summary>
             Класс читает координаты из перенаправленного файла и выводит их
@@ -20,10 +17,6 @@
         </member>
         <member name="M:FormattingCoordinates.ReadData.Read">
             <summary>
-<<<<<<< HEAD
-            Метод читает координаты из перенаправленного файла и выводит их
-            в отформатированной виде на консоль
-=======
             метод читает читает координаты из перенаправленного файла
             и выводит их в строковую переменную
             </summary>
@@ -33,7 +26,6 @@
             <summary>
             метод форматирует исходные координаты, полученные из строковой переменной
             и выводит их на консоль
->>>>>>> redirection
             </summary>
         </member>
     </members>

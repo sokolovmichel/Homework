@@ -30,39 +30,28 @@ namespace FormattingCoordinates
         /// <returns></returns>
         public static string Read()
         {
-            if (!Console.IsInputRedirected)
-            {
-                 Console.WriteLine("Эта программа требует, чтобы ввод был перенаправлен из файла.");
-                Console.Read();
-            }
-
-            
             var AllText = String.Empty;
 
             try
             {
-                string line;
-
-
-
-                while ((line = Console.ReadLine()) != null)
+                string line = String.Empty;
+                do
                 {
+                    
+                    line = Console.ReadLine();
                     AllText += line + ",";
-                }
 
+                } while (!string.IsNullOrWhiteSpace(line));
 
-
+                return AllText;
             }
-            catch (System.IO.FileNotFoundException Situation)
+          
+            catch (Exception ex)
             {
-                Console.WriteLine("Нет такого файла. " + Situation.Message);
-            }
-            catch (Exception Situation)
-            {
-                Console.WriteLine(Situation.Message);
+                Console.WriteLine(ex.Message);
             }
 
-            return AllText;
+            return null;
                         
         }
 

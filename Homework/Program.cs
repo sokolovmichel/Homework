@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Globalization;
 
+
 namespace FormattingCoordinates
 {
-
-    class Program
+    /// <summary>
+    /// Точка входа
+    /// </summary>
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите название файла с данными: "); //файл convert.txt, лежит в той же директории, что и exe.
-            ReadData.Read();
-
+            string s = ReadData.Read();
+            ReadData.Convert(s);
+            Console.Read();
         }
     }
 
@@ -21,27 +24,47 @@ namespace FormattingCoordinates
     public class ReadData
     {
         /// <summary>
-        /// Метод читает координаты из перенаправленного файла и выводит их
-        /// в отформатированной виде на консоль
+        /// метод читает читает координаты из перенаправленного файла
+        /// и выводит их в строковую переменную
         /// </summary>
-        public static void Read()
+        /// <returns></returns>
+        public static string Read()
         {
-            Decimal[] X, Y;
             var AllText = String.Empty;
 
             try
             {
-                AllText = System.IO.File.ReadAllText(Console.ReadLine());
-                
+                string line = String.Empty;
+                do
+                {
+                    
+                    line = Console.ReadLine();
+                    AllText += line + ",";
+
+                } while (!string.IsNullOrWhiteSpace(line));
+
+                return AllText;
             }
-            catch (System.IO.FileNotFoundException Situation)
+          
+            catch (Exception ex)
             {
-                Console.WriteLine("Нет такого файла. " + Situation.Message);
+                Console.WriteLine(ex.Message);
             }
-            catch (Exception Situation)
-            {
-                Console.WriteLine(Situation.Message);
-            }
+
+            return null;
+                        
+        }
+
+        /// <summary>
+        /// метод форматирует исходные координаты, полученные из строковой переменной
+        /// и выводит их на консоль
+        /// </summary>
+
+        public static string Convert(string AllText)
+        {
+            Decimal[] X, Y;
+
+            string Text = String.Empty;
 
             Char[] Separator = { '\t', '\r', '\n', ' ', ',' };
 
@@ -51,7 +74,8 @@ namespace FormattingCoordinates
             if (z != 0)
             {
                 Console.WriteLine("Количество исходных данных не кратно двум");
-                return;
+                
+                return null;
             }
 
 
@@ -79,9 +103,19 @@ namespace FormattingCoordinates
             {
                 Console.Write(String.Format("X: {0,-7} " + "Y: {1,-7}" + "\n",
                     X[i], Y[i]));
+
+               
+                
+                Text = String.Format("X: {0}" + "Y: {1}", X[i], Y[i]);
+
+                 
+
             }
 
-            Console.ReadLine();
+           
+
+            return Text;
+            
 
         }
 

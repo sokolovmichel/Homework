@@ -9,20 +9,20 @@
             Точка входа
             </summary>
         </member>
-        <member name="T:FormattingCoordinates.ReadData">
+        <member name="T:Homework.ReadData">
             <summary>
             Класс читает координаты из перенаправленного файла и выводит их
             в отформатированной виде на консоль
             </summary>
         </member>
-        <member name="M:FormattingCoordinates.ReadData.Read">
+        <member name="M:Homework.ReadData.Read">
             <summary>
             метод читает читает координаты из перенаправленного файла
             и выводит их в строковую переменную
             </summary>
             <returns></returns>
         </member>
-        <member name="M:FormattingCoordinates.ReadData.Convert(System.String)">
+        <member name="M:Homework.ReadData.Convert(System.String)">
             <summary>
             метод форматирует исходные координаты, полученные из строковой переменной
             и выводит их на консоль

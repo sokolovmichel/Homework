@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homewo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionWPF", "VersionWPF\VersionWPF.csproj", "{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}"
 EndProject
-<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Performance-Profiler", "1-Performance-Profiler\1-Performance-Profiler.csproj", "{87430246-3EA1-4B45-8A27-E3CAD5DD16D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-Newton-Root", "2-Newton-Root\2-Newton-Root.csproj", "{56B37D3D-BEC3-4B0C-972A-1783CCE37BB8}"
@@ -16,14 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task2DecimalToBinary", "Tas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task3CommonDivisor", "Task3CommonDivisor\Task3CommonDivisor.csproj", "{E7D827F3-413E-4E8F-898E-BCBD9E5495C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3CommonDivisor.Tests", "Task3CommonDivisor.Tests\Task3CommonDivisor.Tests.csproj", "{F2C10ABD-76BB-46A9-B523-51EF0044230D}"
-=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task3CommonDivisor.Tests", "Task3CommonDivisor.Tests\Task3CommonDivisor.Tests.csproj", "{F2C10ABD-76BB-46A9-B523-51EF0044230D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkTest", "HomeworkTest\HomeworkTest.csproj", "{AA794511-9F80-4CB5-BFE3-C24ED59122C3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkForMoq", "HomeworkForMoq\HomeworkForMoq.csproj", "{8668CF16-988B-4C34-9946-898EFDF859C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkForMoqTests1", "HomeworkForMoqTests1\HomeworkForMoqTests1.csproj", "{32FFBA98-2AD8-4BE4-B2A0-78060099E428}"
->>>>>>> redirection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4Triangle", "Task4Triangle\Task4Triangle.csproj", "{EF947E75-2420-4717-A69B-3680ADE59B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4Triangle.Tests", "Task4Triangle.Tests\Task4Triangle.Tests.csproj", "{C45A1B9E-1688-4EFE-8DD1-D5B9BA4BBD5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,7 +41,6 @@ Global
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C95A8594-7BAF-4C6F-B5CE-86065E8288AE}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{87430246-3EA1-4B45-8A27-E3CAD5DD16D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87430246-3EA1-4B45-8A27-E3CAD5DD16D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87430246-3EA1-4B45-8A27-E3CAD5DD16D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,7 +61,6 @@ Global
 		{F2C10ABD-76BB-46A9-B523-51EF0044230D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C10ABD-76BB-46A9-B523-51EF0044230D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C10ABD-76BB-46A9-B523-51EF0044230D}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
 		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA794511-9F80-4CB5-BFE3-C24ED59122C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,7 +73,14 @@ Global
 		{32FFBA98-2AD8-4BE4-B2A0-78060099E428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FFBA98-2AD8-4BE4-B2A0-78060099E428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FFBA98-2AD8-4BE4-B2A0-78060099E428}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> redirection
+		{EF947E75-2420-4717-A69B-3680ADE59B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF947E75-2420-4717-A69B-3680ADE59B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF947E75-2420-4717-A69B-3680ADE59B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF947E75-2420-4717-A69B-3680ADE59B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45A1B9E-1688-4EFE-8DD1-D5B9BA4BBD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45A1B9E-1688-4EFE-8DD1-D5B9BA4BBD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45A1B9E-1688-4EFE-8DD1-D5B9BA4BBD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45A1B9E-1688-4EFE-8DD1-D5B9BA4BBD5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

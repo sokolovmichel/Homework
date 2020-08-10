@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Task4Triangle</name>
+    </assembly>
+    <members>
+        <member name="T:Task4Triangle.Check">
+            <summary>
+            Класс Check проверяет корректность ввода данных и не позволяет создать объект в ошибочном состоянии
+            </summary>
+        </member>
+        <member name="M:Task4Triangle.Check.CheckTriangle(System.String,System.String,System.String,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Проверка корректности ввода данных и преобразование данных из строки в числовое значение
+            </summary>
+        </member>
+        <member name="T:Task4Triangle.Triangle">
+            <summary>
+            Класс Triangle реализует функции подсчета площади и периметра треугольника по заданным длинам сторон 
+            </summary>
+        </member>
+        <member name="M:Task4Triangle.Triangle.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Длины сторон треугольника
+            </summary>
+        </member>
+        <member name="M:Task4Triangle.Triangle.CalculateArea">
+            <summary>
+            Вычисление площади треугольника по формуле Герона.
+            Площадь равна корню из произведения разностей полупериметра треугольника и каждой из его сторон.
+            </summary>
+        </member>
+        <member name="M:Task4Triangle.Triangle.CalculatePerimeter">
+            <summary>
+            Вычисление периметра треугольника.
+            Периметр равен сумме длин сторон треугольника.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

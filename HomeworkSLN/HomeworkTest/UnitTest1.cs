@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using FormattingCoordinates;
+using Homework;
 
 namespace HomeworkTest
 {

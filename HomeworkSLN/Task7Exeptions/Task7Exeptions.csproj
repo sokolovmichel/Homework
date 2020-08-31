@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CD9486A-B77C-4854-A4C4-941BA0CE2894}</ProjectGuid>
+    <ProjectGuid>{27DF54B1-E0A2-4BF4-8263-F86D882DE626}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task6Interface</RootNamespace>
-    <AssemblyName>Task6Interface</AssemblyName>
+    <RootNamespace>Task7Exeptions</RootNamespace>
+    <AssemblyName>Task7Exeptions</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICodeChecker.cs" />
-    <Compile Include="IConvertible.cs" />
+    <Compile Include="CheckInput.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="MatrixException.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramConverter.cs" />
-    <Compile Include="ProgramHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ProgramHelper.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

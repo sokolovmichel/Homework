@@ -1,0 +1,4 @@
+﻿namespace FurnitureFactory
+{
+    interface ITable{}
+}

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Task9FileSystemWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task9FileSystemWPF"
+        mc:Ignorable="d"
+        Title="Текстовый редактор" Height="455" Width="800" ResizeMode="CanMinimize" Closing="Window_Closing">
+    <StackPanel>
+
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Открыть" Click="Load_Click"></MenuItem>
+                <MenuItem Header="Сохранить" Click="Save_Click"></MenuItem>
+                <MenuItem Header="Сохранить как" Click="SaveAs_Click"></MenuItem>
+                <MenuItem Header="Выход" Click="Exit_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <RichTextBox x:Name="docBox" AcceptsReturn="True" Height="390" TextChanged="docBox_TextChanged">
+            <FlowDocument>
+                <Paragraph >Hello</Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+
+
+
+
+    </StackPanel>
+
+
+</Window>

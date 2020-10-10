@@ -145,11 +145,11 @@
                         RegionID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.TerritoryID)
-                .ForeignKey("dbo.Regions", t => t.RegionID)
+                .ForeignKey("dbo.Region", t => t.RegionID)
                 .Index(t => t.RegionID);
             
             CreateTable(
-                "dbo.Regions",
+                "dbo.Region",
                 c => new
                     {
                         RegionID = c.Int(nullable: false),
@@ -222,7 +222,7 @@
             DropForeignKey("dbo.Order Details", "OrderID", "dbo.Orders");
             DropForeignKey("dbo.EmployeeTerritories", "TerritoryID", "dbo.Territories");
             DropForeignKey("dbo.EmployeeTerritories", "EmployeeID", "dbo.Employees");
-            DropForeignKey("dbo.Territories", "RegionID", "dbo.Regions");
+            DropForeignKey("dbo.Territories", "RegionID", "dbo.Region");
             DropForeignKey("dbo.Orders", "EmployeeID", "dbo.Employees");
             DropForeignKey("dbo.Employees", "ReportsTo", "dbo.Employees");
             DropForeignKey("dbo.Orders", "CustomerID", "dbo.Customers");
@@ -246,7 +246,7 @@
             DropTable("dbo.CustomerCustomerDemo");
             DropTable("dbo.Suppliers");
             DropTable("dbo.Shippers");
-            DropTable("dbo.Regions");
+            DropTable("dbo.Region");
             DropTable("dbo.Territories");
             DropTable("dbo.Employees");
             DropTable("dbo.CustomerDemographics");

@@ -7,16 +7,14 @@
     {
         public override void Up()
         {
-            AddColumn("dbo.Customers", "Regions", c => c.String(maxLength: 15));
+            RenameTable(name: "dbo.Region", newName: "Regions");
             AddColumn("dbo.Customers", "FoundationDate", c => c.DateTime(nullable: false));
-            DropColumn("dbo.Customers", "Region");
         }
         
         public override void Down()
         {
-            AddColumn("dbo.Customers", "Region", c => c.String(maxLength: 15));
             DropColumn("dbo.Customers", "FoundationDate");
-            DropColumn("dbo.Customers", "Regions");
+            RenameTable(name: "dbo.Regions", newName: "Region");
         }
     }
 }

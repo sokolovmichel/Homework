@@ -49,7 +49,6 @@ namespace Test2
                    
                     if (newText.Contains(str))
                     {
-                        //Console.WriteLine(f);
                         Console.WriteLine(i);
 
                         FileInfo fi = new FileInfo(f);

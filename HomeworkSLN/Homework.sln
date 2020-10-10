@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskLINQ", "TaskLINQ\TaskLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test2", "Test2\Test2.csproj", "{8182F04F-2183-496F-8821-E096139766C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{1371D968-83A7-46C2-9842-386F794123BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{8182F04F-2183-496F-8821-E096139766C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8182F04F-2183-496F-8821-E096139766C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8182F04F-2183-496F-8821-E096139766C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1371D968-83A7-46C2-9842-386F794123BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1371D968-83A7-46C2-9842-386F794123BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1371D968-83A7-46C2-9842-386F794123BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1371D968-83A7-46C2-9842-386F794123BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
